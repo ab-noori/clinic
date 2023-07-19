@@ -1,11 +1,3 @@
-<!-- ## Getting Started
-
-This repository includes files with plain SQL that can be used to recreate a database:
-
-- Use [schema.sql](./schema.sql) to create all tables.
-- Use [data.sql](./data.sql) to populate tables with sample data.
-- Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!** -->
-
 <a name="readme-top"></a>
 
 
@@ -68,10 +60,9 @@ This repository includes files with plain SQL that can be used to recreate a dat
 
 ### Key Features <a name="key-features"></a>
 
-- **[create animals table]**
-- **[query and update animals table]**
-- **[query multiple tables]**
-- **[add 'join table' for visits]**
+- **[create patients table]**
+- **[create all the necessary foreign keys]**
+- **[Create a many to many relational table]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,7 +96,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ab-noori/vet-clinic.git
+  git clone https://github.com/ab-noori/clinic.git
 ```
 
 ### Install
@@ -114,7 +105,7 @@ Install this project with:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ab-noori/vet-clinic.git
+  git clone https://github.com/ab-noori/clinic.git
 ```
 
 ### Usage
@@ -123,7 +114,7 @@ To run the project, execute the following command:
 
 ```sh
   cd my-folder
-  git clone https://github.com/ab-noori/vet-clinic.git
+  git clone https://github.com/ab-noori/clinic.git
 ```
 
 ### Run tests
@@ -154,15 +145,20 @@ You can deploy this project using:
 - Twitter: [@AbdulAliNoori4](https://twitter.com/AbdulAliNoori4)
 - LinkedIn: [abdulali-noori](https://www.linkedin.com/in/abdulali-noori)
 
+👤 **Otmane Echchafyky**
+
+- GitHub: [@otmaneechchafyky](https://github.com/otmaneechchafyky)
+- Twitter: [@EchchafykyO](https://twitter.com/EchchafykyO)
+- LinkedIn: [otmaneechchafyky](https://www.linkedin.com/in/otmane-echchafyky-125801248/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Giving beautiful and responsive UI]**
-- [ ] **[Creating more professional sidebar panel]**
-- [ ] **[Displaying data on the UI]**
+- [ ] **[Normalize the database]**
+- [ ] **[Displaying data on a UI]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -172,7 +168,7 @@ You can deploy this project using:
 
   Contributions, issues, and feature requests are welcome!
 
-  Feel free to check the [issues page](https://github.com/ab-noori/vet-clinic/issues).
+  Feel free to check the [issues page](https://github.com/ab-noori/clinic/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
