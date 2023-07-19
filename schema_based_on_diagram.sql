@@ -1,4 +1,4 @@
--- create the patients relation
+-- Create the patients relation
 CREATE TABLE patients (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
@@ -32,3 +32,9 @@ CREATE TABLE invoice_items (
   treatment_id INT
 );
 
+-- Create the treatments relation
+CREATE TABLE treatments (
+  id SERIAL PRIMARY KEY,
+  type VARCHAR(150) NOT NULL,
+  name VARCHAR(100) NOT NULL
+);
