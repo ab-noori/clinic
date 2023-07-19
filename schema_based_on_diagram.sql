@@ -21,3 +21,14 @@ CREATE TABLE invoices (
   payed_at TIMESTAMP,
   medical_history_id INT
 );
+
+-- Create the invoice_items relation
+CREATE TABLE invoice_items (
+  id SERIAL PRIMARY KEY,
+  unit_price DECIMAL,
+  quantity INT,
+  total_price DECIMAL,
+  invoice_id INT,
+  treatment_id INT
+);
+
