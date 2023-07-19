@@ -1,4 +1,9 @@
--- Create the patients relation
+/* Database schema to keep the structure of the entire database. */
+
+-- Create the clinic database
+CREATE DATABASE clinic;
+
+-- Create the patients' relation
 CREATE TABLE patients (
   id SERIAL PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
