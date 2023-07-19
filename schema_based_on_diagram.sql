@@ -38,3 +38,12 @@ CREATE TABLE treatments (
   type VARCHAR(150) NOT NULL,
   name VARCHAR(100) NOT NULL
 );
+
+-- Create medical_history_treatments to relate medical_history and treatments
+CREATE TABLE medical_history_treatments (
+  medical_history_id INT,
+  treatment_id INT,
+  PRIMARY KEY (medical_history_id, treatment_id),
+  FOREIGN KEY (medical_history_id) REFERENCES medical_histories (id),
+  FOREIGN KEY (treatment_id) REFERENCES treatments (id)
+);
