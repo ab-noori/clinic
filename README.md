@@ -70,7 +70,7 @@
 
 ## 🚀 Schema Diagram <a name="live-demo"></a>
 
-![vet_clinic_schema_diagram](https://github.com/ab-noori/vet-clinic/assets/111179533/449c6559-45ef-41a2-9dd8-b294f8a3b826)
+![clinic_diagram](https://github.com/ab-noori/clinic/assets/111179533/f8f35869-45cd-4599-a203-8780f2882013)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
