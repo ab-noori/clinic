@@ -13,6 +13,12 @@ CREATE TABLE medical_histories (
   status VARCHAR(150)
 );
 
+-- create the foreign key constraint for medical_histories
+ALTER TABLE medical_histories
+ADD CONSTRAINT fk_patient_id
+FOREIGN KEY (patient_id)
+REFERENCES patients (id);
+
 -- create the invoices relation
 CREATE TABLE invoices (
   id SERIAL PRIMARY KEY,
@@ -21,6 +27,12 @@ CREATE TABLE invoices (
   payed_at TIMESTAMP,
   medical_history_id INT
 );
+
+-- create the foreign key constraint for invoices
+ALTER TABLE invoices
+ADD CONSTRAINT fk_invoice_id
+FOREIGN KEY (medical_history_id)
+REFERENCES medical_histories (id);
 
 -- Create the invoice_items relation
 CREATE TABLE invoice_items (
@@ -31,6 +43,15 @@ CREATE TABLE invoice_items (
   invoice_id INT,
   treatment_id INT
 );
+
+-- Create the foreign key constraints for invoice_items relation
+ALTER TABLE invoice_items
+ADD CONSTRAINT fk_invoice_items_invoice_id
+FOREIGN KEY (invoice_id)
+REFERENCES invoices (id),
+ADD CONSTRAINT fk_invoice_items_treatment_id
+FOREIGN KEY (treatment_id)
+REFERENCES treatments (id);
 
 -- Create the treatments relation
 CREATE TABLE treatments (
