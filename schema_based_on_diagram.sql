@@ -58,7 +58,7 @@ ADD CONSTRAINT fk_invoice_items_treatment_id
 FOREIGN KEY (treatment_id)
 REFERENCES treatments (id);
 
--- Create the treatments relation
+-- Create the treatments' relation
 CREATE TABLE treatments (
   id SERIAL PRIMARY KEY,
   type VARCHAR(150) NOT NULL,
